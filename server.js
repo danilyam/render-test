@@ -9,7 +9,7 @@ const pool = new Pool({
     },
 });
 
-app.get('/', (res, req) => {
+app.get('/', (req, res) => {
     try {
         res.status(200).json({ message: 'Success'});
     } catch(err) {
